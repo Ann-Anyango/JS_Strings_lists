@@ -43,3 +43,39 @@ function greate(number1,number2){
 
 }
 console.log(greate(89,90))
+// // Write a function that takes a string as a parameter and 
+// returns true if the string is a palindrome 
+// and false otherwise
+function palindrom_string(string){
+    let names=string.length;
+    for(let i=0;i<names/2;i++){
+        if (string[i]!==string[names-1-i]){
+            return true
+        }
+        else{
+            return false
+        }
+        
+    }  
+ 
+}
+let string=("grey");
+console.log(palindrom_string(string))
+// Write a function that takes in a array of numbers as 
+// a parameter and returns the second largest number in the array
+function Second_Largest_Number(numbers) {
+    numbers.sort(function(c, d) {
+        return c- d;
+      });
+      return numbers[1];
+    }
+    let numbers = [3, 5, 2, 1, 9, 7];
+    let secondLargest =Second_Largest_Number(numbers);
+    console.log(secondLargest);
+
+  
+
+  
+
+  
+  
